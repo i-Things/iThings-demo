@@ -1,0 +1,17 @@
+info(
+	title: "企业版web端网关"
+	desc: "负责企业版http协议的网关"
+	author: "杨磊"
+	email: "603685348@qq.com"
+	version: "v1"
+)
+
+@server(
+	prefix: /api/v1/pro
+	middleware: CheckToken
+)
+service papi {
+	@doc "ping"
+	@handler ping
+	get /ping () returns ()
+}
