@@ -1,0 +1,6 @@
+/pack/*
+### VS Code ###
+.vscode/
+go.sum
+*.exe
+/src/papisvr/papisvr
